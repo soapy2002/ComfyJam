@@ -5,6 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_MainMenu.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_PauseMenu.uasset",
 				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Art/M_MasterMaterial.uasset",
 				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Materials/M_MasterMaterial.uasset"
 			]
