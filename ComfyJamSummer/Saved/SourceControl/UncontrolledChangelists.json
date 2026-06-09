@@ -18,13 +18,14 @@
 				"E:/UE 5.7/UE_5.7/Engine/Content/EngineMaterials/Widget3DPassThrough.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/GM_ComfyGame.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/PC_ComfyController.uasset",
-				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_PauseMenu.uasset",
-				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/BP_Menues_3D.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/BP_Menus_3D.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/InputAction/IMC_ComfyGame.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/InputAction/IA_Pause.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/InputAction/IA_Fish.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/InputAction/IA_Shop.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Meshes/SM_BeachScene.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_PauseMenu.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/BP_Menues_3D.uasset",
 				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Art/M_MasterMaterial.uasset",
 				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Materials/M_MasterMaterial.uasset"
 			]
