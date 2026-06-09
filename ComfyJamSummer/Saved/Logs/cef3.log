@@ -1,16 +1,43 @@
-[64788:48612:0609/134145.698:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[64788:48612:0609/134146.567:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
-[64788:48612:0609/134147.883:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[64788:65608:0609/134212.908:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[64788:65608:0609/134212.975:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[64788:65608:0609/134212.978:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[64788:65608:0609/134212.980:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[64788:65608:0609/134226.468:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[64788:65608:0609/134226.478:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[16872:64412:0609/134227.484:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-DB6F16AF74B0A36F08E54AF41D81B992 will be ignored
-[64788:48612:0609/134229.457:ERROR:device_event_log_impl.cc(196)] [13:42:29.130] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
-[63820:63796:0609/134229.552:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[63820:63796:0609/134230.214:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
-[63820:63796:0609/134242.311:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[63820:63796:0609/134253.895:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[64788:48612:0609/143307.180:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[63984:53572:0609/161621.756:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[63984:53572:0609/161622.638:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[63984:53572:0609/161623.971:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[63984:11044:0609/161641.855:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[63984:11044:0609/161641.869:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[63984:11044:0609/161641.872:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[63984:11044:0609/161641.875:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[57672:52368:0609/161643.038:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[57672:52368:0609/161643.378:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[63984:11044:0609/161653.749:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[63984:11044:0609/161653.761:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[63984:53572:0609/161655.285:ERROR:device_event_log_impl.cc(196)] [16:16:54.881] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[57672:52368:0609/161656.526:ERROR:device_event_log_impl.cc(196)] [16:16:55.868] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[60344:16460:0609/161656.585:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-3CFC3FCA21A82EE0E02E5541C84ACD9A will be ignored
+[44380:29456:0609/161656.861:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-BDC46A25D2EDB6E2AB41C292E6ABD535 will be ignored
+[56636:67708:0609/161659.334:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[63984:57184:0609/161659.369:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,9]
+[56636:67708:0609/161659.372:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[63984:53572:0609/161659.465:WARNING:browser_info.cc(345)] Returning a speculative frame for [10,5]
+[63984:53572:0609/161659.465:WARNING:browser_info.cc(345)] Returning a speculative frame for [10,5]
+[63984:53572:0609/161659.465:WARNING:browser_info.cc(345)] Returning a speculative frame for [10,5]
+[63984:53572:0609/161659.465:WARNING:browser_info.cc(345)] Returning a speculative frame for [10,5]
+[63984:57184:0609/161659.554:WARNING:browser_info.cc(345)] Returning a speculative frame for [10,5]
+[65412:35516:0609/161703.724:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[65412:35516:0609/161703.952:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[65412:61436:0609/161704.130:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[65412:61436:0609/161704.131:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[65412:61436:0609/161704.132:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[56636:67708:0609/161704.196:WARNING:host_resolver_dns_task.cc(863)] Address list empty after RFC3484 sort
+[56636:67708:0609/161704.306:ERROR:socket_manager.cc(147)] Failed to resolve address for stun.cloudflare.com., errorcode: -105
+[56636:67708:0609/161704.306:ERROR:socket_manager.cc(147)] Failed to resolve address for stun.cloudflare.com., errorcode: -105
+[56636:67708:0609/161704.306:ERROR:socket_manager.cc(147)] Failed to resolve address for stun.cloudflare.com., errorcode: -105
+[65412:61436:0609/161704.306:WARNING:stun_port.cc(442)] Port[4c64800:0:1:0:host:Net[any:0:0:0:x:x:x:x:x/0:Wildcard:id=0]]: StunPort: stun host lookup received error -1
+[65412:61436:0609/161704.306:WARNING:stun_port.cc(442)] Port[4c65000:1:1:0:host:Net[any:0:0:0:x:x:x:x:x/0:Wildcard:id=0]]: StunPort: stun host lookup received error -1
+[65412:61436:0609/161704.306:WARNING:stun_port.cc(442)] Port[4c65800:2:1:0:host:Net[any:0:0:0:x:x:x:x:x/0:Wildcard:id=0]]: StunPort: stun host lookup received error -1
+[55036:61452:0609/161711.211:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[56636:67708:0609/161711.674:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[56636:67708:0609/161722.366:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[55036:61452:0609/161725.245:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[66900:64416:0609/161911.154:ERROR:shared_image_manager.cc(224)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[66900:64416:0609/161911.154:ERROR:shared_image_manager.cc(224)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[57672:52368:0609/162158.512:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[63984:53572:0609/180054.231:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
