@@ -7,6 +7,14 @@
 			"files": [
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_MainMenu.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_PauseMenu.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_CREDITS_BUTTON.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_OPTIONS_BUTTON.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_PLAY_BUTTON.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_PLAY_BUTTON2.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_QUIT_BUTTON.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/L_Main.umap",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/BP_MainMenu_3D.uasset",
+				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/BP_PlayerPawn.uasset",
 				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Art/M_MasterMaterial.uasset",
 				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Materials/M_MasterMaterial.uasset"
 			]
