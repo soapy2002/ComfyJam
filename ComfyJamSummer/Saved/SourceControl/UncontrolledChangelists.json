@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Materials/M_MasterMaterial.uasset",
+				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/L_Main.umap",
+				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Meshes/SM_BeachScene.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_MainMenu.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_CREDITS_BUTTON.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Materials/UIT_OPTIONS_BUTTON.uasset",
@@ -29,8 +32,7 @@
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/Blueprints/DT_Fish.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/W_PauseMenu.uasset",
 				"E:/GitHub/ComfyJam/ComfyJamSummer/Content/UserInterface/BP_Menues_3D.uasset",
-				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Art/M_MasterMaterial.uasset",
-				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Materials/M_MasterMaterial.uasset"
+				"D:/GameJams/ComfyJam/ComfyJamSummer/Content/Art/M_MasterMaterial.uasset"
 			]
 		}
 	]
