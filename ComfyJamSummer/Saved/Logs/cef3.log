@@ -1,16 +1,32 @@
-[63964:33168:0617/142156.974:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[63964:33168:0617/142157.880:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
-[63964:33168:0617/142159.037:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[63964:77772:0617/142228.840:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[63964:77772:0617/142228.841:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[63964:77772:0617/142228.842:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[63964:77772:0617/142228.844:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[63964:77772:0617/142235.269:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[63964:77772:0617/142235.274:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[52972:85232:0617/142236.312:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-3FD82436E15B69F15601BA3A81B8ACE3 will be ignored
-[8824:71252:0617/142236.681:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[8824:71252:0617/142237.791:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[63964:33168:0617/142238.595:ERROR:device_event_log_impl.cc(196)] [14:22:37.948] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
-[8824:71252:0617/142251.073:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[8824:71252:0617/142259.870:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[63964:33168:0617/143648.301:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[18640:27268:0617/235911.124:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[18640:27268:0617/235914.876:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[18640:27268:0617/235918.111:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[35816:35420:0618/000200.991:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[31908:23756:0618/000200.991:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[31908:23756:0618/000201.947:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[35816:35420:0618/000222.079:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[18640:35868:0618/000258.947:WARNING:leveldb_database.cc(141)] Unable to open D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18640:35868:0618/000258.975:WARNING:leveldb_database.cc(141)] Unable to open D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18640:35868:0618/000258.977:WARNING:leveldb_database.cc(141)] Unable to open D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18640:35868:0618/000258.978:WARNING:leveldb_database.cc(141)] Unable to open D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\GameJams\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18640:27268:0618/000305.554:ERROR:network_service_instance_impl.cc(608)] Network service crashed, restarting service.
+[18640:29832:0618/000307.449:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18640:29832:0618/000307.451:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[5628:1808:0618/000314.416:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-717DF4E55D85D55B09B0BE72A2667833 will be ignored
+[28696:30176:0618/000319.059:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[28696:2228:0618/000319.812:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[28696:2228:0618/000319.812:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[28696:2228:0618/000319.813:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[35816:20464:0618/000320.581:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,9]
+[35816:20464:0618/000324.336:WARNING:browser_info.cc(345)] Returning a speculative frame for [9,9]
+[35816:35420:0618/000324.391:WARNING:browser_info.cc(345)] Returning a speculative frame for [9,9]
+[35816:35420:0618/000324.391:WARNING:browser_info.cc(345)] Returning a speculative frame for [9,9]
+[35816:35420:0618/000324.391:WARNING:browser_info.cc(345)] Returning a speculative frame for [9,9]
+[35816:35420:0618/000324.391:WARNING:browser_info.cc(345)] Returning a speculative frame for [9,9]
+[19100:31472:0618/000326.341:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[19100:36344:0618/000326.654:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[19100:36344:0618/000326.654:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[19100:36344:0618/000326.654:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[19100:31472:0618/000329.729:WARNING:codec.cc(525)] Explicitly added H264 constrained baseline to list of supported formats.
+[18640:27268:0618/000341.454:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[35816:35420:0618/000442.915:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
