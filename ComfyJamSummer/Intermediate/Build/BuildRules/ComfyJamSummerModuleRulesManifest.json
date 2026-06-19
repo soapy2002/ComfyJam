@@ -1,0 +1,10 @@
+{
+	"SourceFiles": [
+		"E:\\GitHub\\ComfyJam\\ComfyJamSummer\\Intermediate\\Source\\ComfyJamSummer.Build.cs",
+		"E:\\GitHub\\ComfyJam\\ComfyJamSummer\\Intermediate\\Source\\ComfyJamSummer.Target.cs",
+		"E:\\GitHub\\ComfyJam\\ComfyJamSummer\\Intermediate\\Source\\ComfyJamSummerClient.Target.cs",
+		"E:\\GitHub\\ComfyJam\\ComfyJamSummer\\Intermediate\\Source\\ComfyJamSummerEditor.Target.cs",
+		"E:\\GitHub\\ComfyJam\\ComfyJamSummer\\Intermediate\\Source\\ComfyJamSummerServer.Target.cs"
+	],
+	"EngineVersion": "5.7.4"
+}
