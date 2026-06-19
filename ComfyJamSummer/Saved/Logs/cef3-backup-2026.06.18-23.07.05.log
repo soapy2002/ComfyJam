@@ -1,0 +1,16 @@
+[33892:35096:0618/202442.746:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[33892:35096:0618/202442.819:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[33892:22712:0618/202454.294:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[33892:22712:0618/202454.295:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[33892:22712:0618/202454.307:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[33892:22712:0618/202454.308:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[33892:32164:0618/202455.165:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[33892:32164:0618/202455.167:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[14944:31552:0618/202455.750:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-DCCAF0F468090AC3C9D5EFBF1E4D7B59 will be ignored
+[33892:35148:0618/202456.856:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[33892:35148:0618/202456.981:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[33892:35148:0618/210342.605:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[33892:35096:0618/220412.184:ERROR:device_event_log_impl.cc(196)] [22:04:12.180] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[33892:35148:0618/221420.187:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[33892:35148:0618/224955.404:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[33892:35096:0618/233544.693:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

@@ -1,16 +1,21 @@
-[33892:35096:0618/202442.746:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[33892:35096:0618/202442.819:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[33892:22712:0618/202454.294:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33892:22712:0618/202454.295:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33892:22712:0618/202454.307:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33892:22712:0618/202454.308:WARNING:leveldb_database.cc(141)] Unable to open E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33892:32164:0618/202455.165:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33892:32164:0618/202455.167:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[14944:31552:0618/202455.750:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-DCCAF0F468090AC3C9D5EFBF1E4D7B59 will be ignored
-[33892:35148:0618/202456.856:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[33892:35148:0618/202456.981:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[33892:35148:0618/210342.605:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[33892:35096:0618/220412.184:ERROR:device_event_log_impl.cc(196)] [22:04:12.180] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
-[33892:35148:0618/221420.187:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[33892:35148:0618/224955.404:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[33892:35096:0618/233544.693:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[75396:54356:0619/001255.671:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[75396:54356:0619/001256.703:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[75396:54356:0619/001258.020:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[75396:66164:0619/001330.966:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[75396:66164:0619/001331.156:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[75396:66164:0619/001331.157:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[75396:66164:0619/001331.159:WARNING:leveldb_database.cc(141)] Unable to open E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: E:\GitHub\ComfyJam\ComfyJamSummer\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[55148:75152:0619/001340.952:WARNING:backend_impl.cc(1764)] Destroying invalid entry.
+[55148:75152:0619/001340.954:ERROR:backend_impl.cc(989)] Critical error found -8
+[55148:75152:0619/001341.154:WARNING:storage_block-inl.h(138)] Failed data load.
+[55148:75152:0619/001341.155:WARNING:storage_block-inl.h(138)] Failed data load.
+[55148:75152:0619/001341.155:ERROR:entry_impl.cc(955)] Failed to save user data
+[75396:58876:0619/001343.107:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[75396:58876:0619/001343.111:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[75396:54356:0619/001343.624:ERROR:device_event_log_impl.cc(196)] [00:13:43.309] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[65804:90880:0619/001344.657:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-D380A6702E28CAD95766D284CD15CC49 will be ignored
+[55148:47720:0619/001346.184:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[55148:47720:0619/001346.344:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[55148:47720:0619/001356.206:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[55148:47720:0619/001407.190:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[75396:54356:0619/013911.289:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
