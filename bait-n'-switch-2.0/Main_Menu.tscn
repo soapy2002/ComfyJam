@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://diqu0bouxidve"]
+
+[ext_resource type="Script" uid="uid://6xqpgo5sjule" path="res://main_menu.gd" id="1_257up"]
+[ext_resource type="Texture2D" uid="uid://85flnrhlhkfj" path="res://BUTTONS/START_BUTTON.png" id="1_m625n"]
+[ext_resource type="Texture2D" uid="uid://bdwjdbp7wyqkd" path="res://BUTTONS/OPTIONS_BUTTON.png" id="2_dnfjo"]
+[ext_resource type="Texture2D" uid="uid://maw7rq6r7r6o" path="res://BUTTONS/QUIT_BUTTON.png" id="3_257up"]
+[ext_resource type="Texture2D" uid="uid://b7j735c1fja3u" path="res://BAIT_N_SWITCH_LOGO_SIGN_NEW.png" id="4_3mro0"]
+
+[node name="MainMenu" type="Control" unique_id=1088355603]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_257up")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1283795119]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -347.5
+offset_top = -304.0
+offset_right = 347.5
+offset_bottom = 361.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(347.5, 450)
+alignment = 1
+
+[node name="Start Game" type="Button" parent="VBoxContainer" unique_id=844723851]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+icon = ExtResource("1_m625n")
+flat = true
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=17119608]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+icon = ExtResource("2_dnfjo")
+flat = true
+
+[node name="Quit Game" type="Button" parent="VBoxContainer" unique_id=1017068466]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+icon = ExtResource("3_257up")
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=928058605]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -879.5
+offset_top = 25.0
+offset_right = 879.5
+offset_bottom = 1002.0
+grow_horizontal = 2
+scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(879.5, 0)
+texture = ExtResource("4_3mro0")
+
+[connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit Game" to="." method="_on_quit_game_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vue5p2qj70nr"
+path="res://.godot/imported/Chickens In The Meadow.ogg-4cc96528e5166b7382738667c3611988.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cosy Tunes/Chickens In The Meadow.ogg"
+dest_files=["res://.godot/imported/Chickens In The Meadow.ogg-4cc96528e5166b7382738667c3611988.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

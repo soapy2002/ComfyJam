@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sus4l5x8h52p"
+path="res://.godot/imported/Wanderer's Tale.ogg-c118d1545f981fd52cd7d0caa36ff596.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cosy Tunes/Wanderer's Tale.ogg"
+dest_files=["res://.godot/imported/Wanderer's Tale.ogg-c118d1545f981fd52cd7d0caa36ff596.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
