@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Bait N' Switch 2.0"
 run/main_scene="uid://diqu0bouxidve"
-config/features=PackedStringArray("4.7", "Forward Plus")
+config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 
 [display]
 
