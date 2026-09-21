@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsy03f0d00e4t"]
 
-[ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Player_Movement.gd" id="2_2dftf"]
+[ext_resource type="Script" uid="uid://bxb54v31eekn8" path="res://CharacterBody3d.cs" id="1_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://cswv34ux75rmv" path="res://radio.tscn" id="2_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://c1jvg32fe3a5" path="res://Meshes/Island/SM_BeachScene.fbx" id="3_bcbcq"]
 
@@ -301,7 +301,7 @@ _data = {
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=963001682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4347274, 3.2253637)
-script = ExtResource("2_2dftf")
+script = ExtResource("1_bcbcq")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1483466505]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24065161, -1.9200395)
@@ -333,263 +333,260 @@ transform = Transform3D(0.63264465, -0.021053046, -0.774156, -0.052208472, 0.996
 
 [node name="SM_BeachScene" parent="Island" unique_id=1650158987 instance=ExtResource("3_bcbcq")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Sand" parent_id_path=PackedInt32Array(1650158987, 884511926) index="0" unique_id=1281005829]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Sand" parent_id_path=PackedInt32Array(1650158987, 271846903) index="0" unique_id=1281005829]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Sand/StaticBody3D" unique_id=360897814]
 shape = SubResource("ConcavePolygonShape3D_js7pq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cliffs" parent_id_path=PackedInt32Array(1650158987, 704366903) index="0" unique_id=41007868]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cliffs" parent_id_path=PackedInt32Array(1650158987, 1992836068) index="0" unique_id=41007868]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Cliffs/StaticBody3D" unique_id=1353334041]
 shape = SubResource("ConcavePolygonShape3D_eu7l1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/RocksWater" parent_id_path=PackedInt32Array(1650158987, 1106212863) index="0" unique_id=945935373]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/RocksWater" parent_id_path=PackedInt32Array(1650158987, 120266305) index="0" unique_id=945935373]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/RocksWater/StaticBody3D" unique_id=1184554613]
 shape = SubResource("ConcavePolygonShape3D_p1v5b")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Sign" parent_id_path=PackedInt32Array(1650158987, 1726315843) index="0" unique_id=2075115147]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Sign" parent_id_path=PackedInt32Array(1650158987, 157566672) index="0" unique_id=2075115147]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Sign/StaticBody3D" unique_id=523684943]
 shape = SubResource("ConcavePolygonShape3D_wygdx")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cylinder006" parent_id_path=PackedInt32Array(1650158987, 1524514160) index="0" unique_id=811572523]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cylinder006" parent_id_path=PackedInt32Array(1650158987, 1303237954) index="0" unique_id=811572523]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Cylinder006/StaticBody3D" unique_id=352649641]
 shape = SubResource("ConcavePolygonShape3D_bah7m")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Waves1" parent_id_path=PackedInt32Array(1650158987, 361821874) index="0" unique_id=1877620135]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Waves1" parent_id_path=PackedInt32Array(1650158987, 2141507203) index="0" unique_id=1877620135]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Waves1/StaticBody3D" unique_id=632782129]
 shape = SubResource("ConcavePolygonShape3D_fv4w7")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Waves2" parent_id_path=PackedInt32Array(1650158987, 290914141) index="0" unique_id=247357194]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Waves2" parent_id_path=PackedInt32Array(1650158987, 1577546980) index="0" unique_id=247357194]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Waves2/StaticBody3D" unique_id=634066848]
 shape = SubResource("ConcavePolygonShape3D_fvag4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Scale_Reference001" parent_id_path=PackedInt32Array(1650158987, 1184720348) index="0" unique_id=1871131416]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Scale_Reference001" parent_id_path=PackedInt32Array(1650158987, 396649554) index="0" unique_id=1871131416]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Scale_Reference001/StaticBody3D" unique_id=1019345170]
 shape = SubResource("ConcavePolygonShape3D_kva58")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cylinder008" parent_id_path=PackedInt32Array(1650158987, 1545472853) index="0" unique_id=1463588873]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cylinder008" parent_id_path=PackedInt32Array(1650158987, 120113319) index="0" unique_id=1463588873]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Cylinder008/StaticBody3D" unique_id=186290594]
 shape = SubResource("ConcavePolygonShape3D_ee7l0")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box003" parent_id_path=PackedInt32Array(1650158987, 306155077) index="0" unique_id=1472342735]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box003" parent_id_path=PackedInt32Array(1650158987, 1411881945) index="0" unique_id=1472342735]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box003/StaticBody3D" unique_id=88855779]
 shape = SubResource("ConcavePolygonShape3D_gn8l5")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box006" parent_id_path=PackedInt32Array(1650158987, 1263398563) index="0" unique_id=1359431446]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box006" parent_id_path=PackedInt32Array(1650158987, 1311358680) index="0" unique_id=1359431446]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box006/StaticBody3D" unique_id=2137501086]
 shape = SubResource("ConcavePolygonShape3D_6w02q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Rocks" parent_id_path=PackedInt32Array(1650158987, 522692140) index="0" unique_id=1697996195]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Rocks" parent_id_path=PackedInt32Array(1650158987, 1371064410) index="0" unique_id=1697996195]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Rocks/StaticBody3D" unique_id=1430731882]
 shape = SubResource("ConcavePolygonShape3D_cvq6i")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cave" parent_id_path=PackedInt32Array(1650158987, 295265482) index="0" unique_id=65609321]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cave" parent_id_path=PackedInt32Array(1650158987, 758922833) index="0" unique_id=65609321]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Cave/StaticBody3D" unique_id=347130748]
 shape = SubResource("ConcavePolygonShape3D_6tx0c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Plane002" parent_id_path=PackedInt32Array(1650158987, 509255906) index="0" unique_id=831463600]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Plane002" parent_id_path=PackedInt32Array(1650158987, 1801063966) index="0" unique_id=831463600]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Plane002/StaticBody3D" unique_id=1334096339]
 shape = SubResource("ConcavePolygonShape3D_5j71u")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Plane003" parent_id_path=PackedInt32Array(1650158987, 2122126103) index="0" unique_id=1974104730]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Plane003" parent_id_path=PackedInt32Array(1650158987, 615902315) index="0" unique_id=1974104730]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Plane003/StaticBody3D" unique_id=382206050]
 shape = SubResource("ConcavePolygonShape3D_jyqkj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box007" parent_id_path=PackedInt32Array(1650158987, 1075320497) index="0" unique_id=1320285387]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box007" parent_id_path=PackedInt32Array(1650158987, 235669547) index="0" unique_id=1320285387]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box007/StaticBody3D" unique_id=436891548]
 shape = SubResource("ConcavePolygonShape3D_ydbc3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box008" parent_id_path=PackedInt32Array(1650158987, 1912827614) index="0" unique_id=1240775872]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box008" parent_id_path=PackedInt32Array(1650158987, 982505944) index="0" unique_id=1240775872]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box008/StaticBody3D" unique_id=1792204413]
 shape = SubResource("ConcavePolygonShape3D_aj1ai")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box009" parent_id_path=PackedInt32Array(1650158987, 815554933) index="0" unique_id=324582465]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box009" parent_id_path=PackedInt32Array(1650158987, 432770872) index="0" unique_id=324582465]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box009/StaticBody3D" unique_id=1350875017]
 shape = SubResource("ConcavePolygonShape3D_d7dfr")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box012" parent_id_path=PackedInt32Array(1650158987, 715160135) index="0" unique_id=569103663]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box012" parent_id_path=PackedInt32Array(1650158987, 1776960397) index="0" unique_id=569103663]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box012/StaticBody3D" unique_id=78684366]
 shape = SubResource("ConcavePolygonShape3D_c2gv2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box013" parent_id_path=PackedInt32Array(1650158987, 953742694) index="0" unique_id=553146214]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box013" parent_id_path=PackedInt32Array(1650158987, 828514561) index="0" unique_id=553146214]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box013/StaticBody3D" unique_id=1031193886]
 shape = SubResource("ConcavePolygonShape3D_rp4qs")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box016" parent_id_path=PackedInt32Array(1650158987, 2106510332) index="0" unique_id=828722925]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box016" parent_id_path=PackedInt32Array(1650158987, 1927632194) index="0" unique_id=828722925]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box016/StaticBody3D" unique_id=385588954]
 shape = SubResource("ConcavePolygonShape3D_rhl3w")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box018" parent_id_path=PackedInt32Array(1650158987, 791027337) index="0" unique_id=204107299]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box018" parent_id_path=PackedInt32Array(1650158987, 690908672) index="0" unique_id=204107299]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box018/StaticBody3D" unique_id=883044867]
 shape = SubResource("ConcavePolygonShape3D_bun23")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box019" parent_id_path=PackedInt32Array(1650158987, 2034037311) index="0" unique_id=1266299099]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box019" parent_id_path=PackedInt32Array(1650158987, 1582804351) index="0" unique_id=1266299099]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box019/StaticBody3D" unique_id=1916205341]
 shape = SubResource("ConcavePolygonShape3D_gtthi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box021" parent_id_path=PackedInt32Array(1650158987, 934378316) index="0" unique_id=1637780363]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box021" parent_id_path=PackedInt32Array(1650158987, 1439121426) index="0" unique_id=1637780363]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box021/StaticBody3D" unique_id=1164890876]
 shape = SubResource("ConcavePolygonShape3D_mnkyj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box022" parent_id_path=PackedInt32Array(1650158987, 2018428786) index="0" unique_id=478083419]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box022" parent_id_path=PackedInt32Array(1650158987, 667576520) index="0" unique_id=478083419]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box022/StaticBody3D" unique_id=1865650063]
 shape = SubResource("ConcavePolygonShape3D_fif40")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box023" parent_id_path=PackedInt32Array(1650158987, 518435430) index="0" unique_id=1348917850]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box023" parent_id_path=PackedInt32Array(1650158987, 525116560) index="0" unique_id=1348917850]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box023/StaticBody3D" unique_id=1025910799]
 shape = SubResource("ConcavePolygonShape3D_6xgc5")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box024" parent_id_path=PackedInt32Array(1650158987, 712369316) index="0" unique_id=1904592560]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box024" parent_id_path=PackedInt32Array(1650158987, 150707948) index="0" unique_id=1904592560]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box024/StaticBody3D" unique_id=257868151]
 shape = SubResource("ConcavePolygonShape3D_0vv3x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box026" parent_id_path=PackedInt32Array(1650158987, 1134906917) index="0" unique_id=1777982576]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box026" parent_id_path=PackedInt32Array(1650158987, 627388963) index="0" unique_id=1777982576]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box026/StaticBody3D" unique_id=224472369]
 shape = SubResource("ConcavePolygonShape3D_fsfaj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box027" parent_id_path=PackedInt32Array(1650158987, 340835624) index="0" unique_id=1946586176]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box027" parent_id_path=PackedInt32Array(1650158987, 1644481803) index="0" unique_id=1946586176]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box027/StaticBody3D" unique_id=895192741]
 shape = SubResource("ConcavePolygonShape3D_yktx5")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box028" parent_id_path=PackedInt32Array(1650158987, 812100926) index="0" unique_id=786987625]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box028" parent_id_path=PackedInt32Array(1650158987, 126870320) index="0" unique_id=786987625]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box028/StaticBody3D" unique_id=643842149]
 shape = SubResource("ConcavePolygonShape3D_88f54")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box031" parent_id_path=PackedInt32Array(1650158987, 1266584339) index="0" unique_id=2124806740]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box031" parent_id_path=PackedInt32Array(1650158987, 127778939) index="0" unique_id=2124806740]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box031/StaticBody3D" unique_id=465103758]
 shape = SubResource("ConcavePolygonShape3D_s3rcb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box032" parent_id_path=PackedInt32Array(1650158987, 389854881) index="0" unique_id=1472981881]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box032" parent_id_path=PackedInt32Array(1650158987, 1237724349) index="0" unique_id=1472981881]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box032/StaticBody3D" unique_id=1376884156]
 shape = SubResource("ConcavePolygonShape3D_wf24g")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box033" parent_id_path=PackedInt32Array(1650158987, 1716598796) index="0" unique_id=1952173584]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box033" parent_id_path=PackedInt32Array(1650158987, 1835744080) index="0" unique_id=1952173584]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box033/StaticBody3D" unique_id=1820627857]
 shape = SubResource("ConcavePolygonShape3D_8ios8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box034" parent_id_path=PackedInt32Array(1650158987, 1752178210) index="0" unique_id=858830944]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box034" parent_id_path=PackedInt32Array(1650158987, 122599170) index="0" unique_id=858830944]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box034/StaticBody3D" unique_id=887769093]
 shape = SubResource("ConcavePolygonShape3D_s1hef")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box035" parent_id_path=PackedInt32Array(1650158987, 1400985045) index="0" unique_id=957465733]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box035" parent_id_path=PackedInt32Array(1650158987, 412610175) index="0" unique_id=957465733]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box035/StaticBody3D" unique_id=1292505326]
 shape = SubResource("ConcavePolygonShape3D_msfih")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box036" parent_id_path=PackedInt32Array(1650158987, 1277332904) index="0" unique_id=1373998715]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box036" parent_id_path=PackedInt32Array(1650158987, 1289579606) index="0" unique_id=1373998715]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box036/StaticBody3D" unique_id=1526240329]
 shape = SubResource("ConcavePolygonShape3D_lksbi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box037" parent_id_path=PackedInt32Array(1650158987, 1111443033) index="0" unique_id=1976309438]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box037" parent_id_path=PackedInt32Array(1650158987, 1917039915) index="0" unique_id=1976309438]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box037/StaticBody3D" unique_id=536510224]
 shape = SubResource("ConcavePolygonShape3D_f43k2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box038" parent_id_path=PackedInt32Array(1650158987, 1634091462) index="0" unique_id=1938483414]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box038" parent_id_path=PackedInt32Array(1650158987, 591953838) index="0" unique_id=1938483414]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box038/StaticBody3D" unique_id=1876097009]
 shape = SubResource("ConcavePolygonShape3D_8jjlf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box039" parent_id_path=PackedInt32Array(1650158987, 1861538958) index="0" unique_id=1329844881]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box039" parent_id_path=PackedInt32Array(1650158987, 1960659060) index="0" unique_id=1329844881]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box039/StaticBody3D" unique_id=291650823]
 shape = SubResource("ConcavePolygonShape3D_ylme8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box040" parent_id_path=PackedInt32Array(1650158987, 338632659) index="0" unique_id=1281616464]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box040" parent_id_path=PackedInt32Array(1650158987, 56962810) index="0" unique_id=1281616464]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box040/StaticBody3D" unique_id=536360629]
 shape = SubResource("ConcavePolygonShape3D_o7opi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box041" parent_id_path=PackedInt32Array(1650158987, 601874693) index="0" unique_id=1797608159]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box041" parent_id_path=PackedInt32Array(1650158987, 376502253) index="0" unique_id=1797608159]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box041/StaticBody3D" unique_id=1340701265]
 shape = SubResource("ConcavePolygonShape3D_p6sh6")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box042" parent_id_path=PackedInt32Array(1650158987, 85852323) index="0" unique_id=640825773]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box042" parent_id_path=PackedInt32Array(1650158987, 2024365065) index="0" unique_id=640825773]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box042/StaticBody3D" unique_id=710694245]
 shape = SubResource("ConcavePolygonShape3D_olhe2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box043" parent_id_path=PackedInt32Array(1650158987, 961919118) index="0" unique_id=29994753]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box043" parent_id_path=PackedInt32Array(1650158987, 442910811) index="0" unique_id=29994753]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box043/StaticBody3D" unique_id=1216640426]
 shape = SubResource("ConcavePolygonShape3D_s3kwu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box044" parent_id_path=PackedInt32Array(1650158987, 750532474) index="0" unique_id=586985550]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box044" parent_id_path=PackedInt32Array(1650158987, 489455237) index="0" unique_id=586985550]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box044/StaticBody3D" unique_id=1843504938]
 shape = SubResource("ConcavePolygonShape3D_ybp5j")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cylinder026" parent_id_path=PackedInt32Array(1650158987, 591046483) index="0" unique_id=754542988]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Cylinder026" parent_id_path=PackedInt32Array(1650158987, 1478766123) index="0" unique_id=754542988]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Cylinder026/StaticBody3D" unique_id=1108078456]
 shape = SubResource("ConcavePolygonShape3D_m21jb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box045" parent_id_path=PackedInt32Array(1650158987, 127476559) index="0" unique_id=1699423440]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box045" parent_id_path=PackedInt32Array(1650158987, 866036) index="0" unique_id=1699423440]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box045/StaticBody3D" unique_id=1480091956]
 shape = SubResource("ConcavePolygonShape3D_wmdyy")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box046" parent_id_path=PackedInt32Array(1650158987, 1987337552) index="0" unique_id=1989612695]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box046" parent_id_path=PackedInt32Array(1650158987, 951860403) index="0" unique_id=1989612695]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box046/StaticBody3D" unique_id=1524777259]
 shape = SubResource("ConcavePolygonShape3D_tlk5t")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box047" parent_id_path=PackedInt32Array(1650158987, 1618201358) index="0" unique_id=1932573433]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box047" parent_id_path=PackedInt32Array(1650158987, 55381341) index="0" unique_id=1932573433]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box047/StaticBody3D" unique_id=760726568]
 shape = SubResource("ConcavePolygonShape3D_k3wwj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box048" parent_id_path=PackedInt32Array(1650158987, 1326116932) index="0" unique_id=1628245892]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box048" parent_id_path=PackedInt32Array(1650158987, 1033305190) index="0" unique_id=1628245892]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box048/StaticBody3D" unique_id=1156199140]
 shape = SubResource("ConcavePolygonShape3D_2tffn")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box049" parent_id_path=PackedInt32Array(1650158987, 1267181912) index="0" unique_id=806571990]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box049" parent_id_path=PackedInt32Array(1650158987, 465166851) index="0" unique_id=806571990]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box049/StaticBody3D" unique_id=1316270184]
 shape = SubResource("ConcavePolygonShape3D_4s2lh")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box050" parent_id_path=PackedInt32Array(1650158987, 1259557238) index="0" unique_id=1601295416]
+[node name="StaticBody3D" type="StaticBody3D" parent="Island/SM_BeachScene/Box050" parent_id_path=PackedInt32Array(1650158987, 1763222370) index="0" unique_id=1601295416]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Island/SM_BeachScene/Box050/StaticBody3D" unique_id=234487525]
 shape = SubResource("ConcavePolygonShape3D_i3ffs")
-
-[node name="SM_BeachScene" parent="Island/SM_BeachScene" unique_id=1736443981 instance=ExtResource("3_bcbcq")]
-transform = Transform3D(0.2838719, 0, -0.95886225, 0, 1, 0, 0.95886225, 0, 0.2838719, 7.340497, -1.470047, 264.2976)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1785963721]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5.7575283, 3.4185781)
@@ -612,13 +609,12 @@ speed_scale = 0.2
 [node name="Lighting" type="Node3D" parent="." unique_id=1652025516]
 
 [node name="LavaLight" type="AreaLight3D" parent="Lighting" unique_id=1288730301]
-transform = Transform3D(-0.2866525, -0.9548024, -0.07863023, 0, -0.082074516, 0.9966262, 0.95803463, -0.2856854, -0.023526866, -15.370081, 2.2527857, -15.500717)
+transform = Transform3D(-0.2866525, -0.9548024, -0.07863023, 0, -0.082074516, 0.9966262, 0.95803463, -0.2856854, -0.023526866, -15.370081, 5.5071917, -15.500717)
 light_color = Color(1, 0.6654178, 0.4532674, 1)
 light_energy = 16.0
 light_indirect_energy = 13.731
 light_volumetric_fog_energy = 3.151
-light_size = 1.0
-area_size = Vector2(30, 18.542)
+area_range = 17.165
 
 [node name="TestCandle" type="OmniLight3D" parent="Lighting" unique_id=1403634879]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.501778, 6.8488464, 2.6713955)
