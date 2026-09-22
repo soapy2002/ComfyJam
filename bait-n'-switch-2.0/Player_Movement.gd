@@ -3,7 +3,9 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+const ROTATION_SPEED = 10
 
+@onready var mesh := $MeshInstance3D
 @onready var neck := $NeckSocket
 @onready var camera := $NeckSocket/SpringArm3D/Camera3D
 @onready var spring_arm := $NeckSocket/SpringArm3D
@@ -32,9 +34,15 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("Right", "Left", "Backward", "Forward")
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		# Calculates the angle matching the movement direction vector on the XZ plane
+		var target_angle = atan2(direction.x, direction.z)
+		# Interpolates smoothly between the current visual angle and the target angle
+		mesh.rotation.y = lerp_angle(mesh.rotation.y, target_angle, ROTATION_SPEED * delta)
+
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)

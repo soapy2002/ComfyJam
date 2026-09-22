@@ -11,3 +11,4 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=453201659]
 stream = ExtResource("2_2avqv")
 autoplay = true
+parameters/looping = true

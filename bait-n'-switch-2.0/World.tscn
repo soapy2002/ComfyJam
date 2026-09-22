@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Player_Movement.gd" id="1_js7pq"]
 [ext_resource type="PackedScene" uid="uid://cswv34ux75rmv" path="res://radio.tscn" id="2_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://c1jvg32fe3a5" path="res://Meshes/Island/SM_BeachScene.fbx" id="3_bcbcq"]
-[ext_resource type="Script" uid="uid://c5lqqfeoq8he6" path="res://GameTimeTracker.gd" id="4_js7pq"]
 [ext_resource type="Script" uid="uid://cjiugv7mhpi82" path="res://trash_pirate_spawner.gd" id="5_eu7l1"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_s1fef"]
@@ -595,7 +594,6 @@ shape = SubResource("ConcavePolygonShape3D_i3ffs")
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5.7575283, 3.4185781)
 shadow_enabled = true
 sky_mode = 1
-script = ExtResource("4_js7pq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalLight3D" unique_id=326389006]
 libraries/ = SubResource("AnimationLibrary_f5c0m")
