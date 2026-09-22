@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://dsy03f0d00e4t"]
 
-[ext_resource type="Script" uid="uid://bxb54v31eekn8" path="res://CharacterBody3d.cs" id="1_bcbcq"]
+[ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Player_Movement.gd" id="1_js7pq"]
 [ext_resource type="PackedScene" uid="uid://cswv34ux75rmv" path="res://radio.tscn" id="2_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://c1jvg32fe3a5" path="res://Meshes/Island/SM_BeachScene.fbx" id="3_bcbcq"]
+[ext_resource type="Script" uid="uid://c5lqqfeoq8he6" path="res://GameTimeTracker.gd" id="4_js7pq"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_s1fef"]
 
@@ -169,7 +170,7 @@ data = PackedVector3Array(0.29999998, 1, 0, -0.29999998, 1, 0, -0.29999998, -1, 
 data = PackedVector3Array(5, 6, 0, -0.048299998, 7.4494996, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 6, 0, 0, 0, 5, 5, 0, 5, 5, 0, 0, 0, 0, 5, 2.2122, 0.38189998, 7, 5, 0, 5, 5, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 5, 5, 6, 0, 5, 0, 0, 5, 0, 0, 5, 0, 5, 5, 6, 5, 5, 6, 5, -0.048299998, 7.4494996, 5, -0.048299998, 7.4494996, 0, 5, 6, 5, 2.2122, 6.3819, 7, -0.048299998, 7.4494996, 5, -0.048299998, 7.4494996, 0, 5, 6, 0, 5, 6, 5, 0, 0, 5, 0, 0, 0, -0.048299998, 7.4494996, 0, -0.048299998, 7.4494996, 0, -0.048299998, 7.4494996, 5, 0, 0, 5, 2.2122, 0.38189998, 7, 2.2122, 6.3819, 7, 5, 6, 5, 5, 6, 5, 5, 0, 5, 2.2122, 0.38189998, 7, 2.2122, 6.3819, 7, 2.2122, 0.38189998, 7, 0, 0, 5, 0, 0, 5, -0.048299998, 7.4494996, 5, 2.2122, 6.3819, 7)
 
 [sub_resource type="Animation" id="Animation_fvag4"]
-length = 0.001
+length = 10.233334
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -197,8 +198,9 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_kva58"]
 resource_name = "SunRotation"
-length = 24.0
+length = 1440.0
 loop_mode = 1
+step = 0.016666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -206,10 +208,10 @@ tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 24),
+"times": PackedFloat32Array(0, 1440),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-1.5707964, 0, 0), Vector3(4.712389, 0, 0)]
+"values": [Vector3(3.1415927, 0, 0), Vector3(6.2831855, 0, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -218,10 +220,10 @@ tracks/1/path = NodePath(".:light_energy")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 5.98, 18),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 777.5333, 1260, 1440),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [1.0, 0.0, 0.0]
+"values": [0.0, 1.0, 0.0, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f5c0m"]
@@ -301,7 +303,7 @@ _data = {
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=963001682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4347274, 3.2253637)
-script = ExtResource("1_bcbcq")
+script = ExtResource("1_js7pq")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1483466505]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24065161, -1.9200395)
@@ -592,11 +594,11 @@ shape = SubResource("ConcavePolygonShape3D_i3ffs")
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5.7575283, 3.4185781)
 shadow_enabled = true
 sky_mode = 1
+script = ExtResource("4_js7pq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalLight3D" unique_id=326389006]
 libraries/ = SubResource("AnimationLibrary_f5c0m")
 autoplay = &"SunRotation"
-speed_scale = 0.2
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1992536116]
 environment = SubResource("Environment_ylco5")
@@ -604,7 +606,6 @@ environment = SubResource("Environment_ylco5")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WorldEnvironment" unique_id=1277967710]
 libraries/ = SubResource("AnimationLibrary_gn8l5")
 autoplay = &"SkyColour"
-speed_scale = 0.2
 
 [node name="Lighting" type="Node3D" parent="." unique_id=1652025516]
 
@@ -616,15 +617,15 @@ light_indirect_energy = 13.731
 light_volumetric_fog_energy = 3.151
 area_range = 17.165
 
-[node name="TestCandle" type="OmniLight3D" parent="Lighting" unique_id=1403634879]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.501778, 6.8488464, 2.6713955)
-
-[node name="TestCandle2" type="OmniLight3D" parent="Lighting" unique_id=1643060918]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.656988, 5.5848255, 13.518885)
-
 [node name="TestCandle3" type="OmniLight3D" parent="Lighting" unique_id=2080268490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79594135, 4.905469, -23.49138)
 light_energy = 4.0
+
+[node name="TestCandle" type="OmniLight3D" parent="Lighting/TestCandle3" unique_id=1403634879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.705837, 1.9433775, 26.162777)
+
+[node name="TestCandle2" type="OmniLight3D" parent="Lighting/TestCandle3" unique_id=1643060918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.861046, 0.6793566, 37.010265)
 
 [node name="TestCandle3" type="OmniLight3D" parent="Lighting/TestCandle3" unique_id=295863865]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16251159, -0.66409016, 8.13377)
@@ -637,10 +638,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.8436775, -0.017432213, 33.9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.785816, -0.43650818, -11.075577)
 light_energy = 4.0
 
-[node name="TestCandle4" type="OmniLight3D" parent="Lighting" unique_id=868123192]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.501778, 5.946336, -12.963842)
+[node name="TestCandle4" type="OmniLight3D" parent="Lighting/TestCandle3" unique_id=868123192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.705837, 1.0408669, 10.527538)
 
-[node name="TestCandle5" type="OmniLight3D" parent="Lighting" unique_id=2086575307]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.280315, 5.6679907, -23.59453)
+[node name="TestCandle5" type="OmniLight3D" parent="Lighting/TestCandle3" unique_id=2086575307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.076256, 0.76252174, -0.103149414)
 
 [editable path="Island/SM_BeachScene"]
