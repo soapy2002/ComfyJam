@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cswv34ux75rmv" path="res://radio.tscn" id="2_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://c1jvg32fe3a5" path="res://Meshes/Island/SM_BeachScene.fbx" id="3_bcbcq"]
 [ext_resource type="Script" uid="uid://c5lqqfeoq8he6" path="res://GameTimeTracker.gd" id="4_js7pq"]
+[ext_resource type="Script" uid="uid://cjiugv7mhpi82" path="res://trash_pirate_spawner.gd" id="5_eu7l1"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_s1fef"]
 
@@ -643,5 +644,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.705837, 1.0408669, 10.5275
 
 [node name="TestCandle5" type="OmniLight3D" parent="Lighting/TestCandle3" unique_id=2086575307]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.076256, 0.76252174, -0.103149414)
+
+[node name="TrashPirateMark" type="Marker3D" parent="." unique_id=1643055247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.032253, 3.2056856, -55.614002)
+script = ExtResource("5_eu7l1")
+
+[node name="JetsamMark" type="Marker3D" parent="." unique_id=200122435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.198248, 3.2354689, -57.61114)
+script = ExtResource("5_eu7l1")
 
 [editable path="Island/SM_BeachScene"]

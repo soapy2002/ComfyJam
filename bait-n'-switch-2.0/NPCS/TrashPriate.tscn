@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dej73hndjrt1x"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ylco5"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_ylco5"]
+rings = 4
+ring_segments = 4
+
+[node name="TrashPriate" type="Node3D" unique_id=247150555]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1199204701]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1063296486]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.1719005, 0)
+shape = SubResource("CylinderShape3D_ylco5")
+debug_color = Color(0, 11.708403, 13.469126, 0.41960785)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=660011909]
+transform = Transform3D(-0.013127113, 0.9999138, 0, -0.9999138, -0.013127113, 0, 0, 0, 1, 0, 1.0099165, 0)
+mesh = SubResource("TorusMesh_ylco5")

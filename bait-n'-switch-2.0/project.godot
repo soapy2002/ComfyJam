@@ -14,6 +14,10 @@ config/name="Bait N' Switch 2.0"
 run/main_scene="uid://diqu0bouxidve"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 
+[autoload]
+
+GameTimeTracker="*uid://c5lqqfeoq8he6"
+
 [display]
 
 window/size/viewport_width=1280

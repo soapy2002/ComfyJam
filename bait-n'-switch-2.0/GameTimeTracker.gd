@@ -12,10 +12,10 @@ var current_hour: int = 0 # How many hours have past in the current day
 var is_day: bool = true 
 
 #Static Variables
-var day_start: int = 6 # The hour of day that daytime begins
-var night_start: int = 21 # The hour of day that nighttime begins
-var day_duration: float = 1440 #Seconds passed for a full in game day.
-var time_scale: float = 1 # How many seconds in game occur per real world second.
+const day_start: int = 6 # The hour of day that daytime begins
+const night_start: int = 21 # The hour of day that nighttime begins
+const day_duration: float = 1440 #Seconds passed for a full in game day.
+const time_scale: float = 1 # How many seconds in game occur per real world second.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
