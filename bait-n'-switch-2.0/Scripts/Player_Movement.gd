@@ -2,8 +2,10 @@ extends CharacterBody3D
 
 
 const SPEED = 5.0
+const ACCELERATION = 20.0
+const FRICTION = 20.0
 const JUMP_VELOCITY = 4.5
-const ROTATION_SPEED = 10
+const ROTATION_SPEED = 6.0 # Lower the rotation to make turning wider
 
 @onready var mesh := $MeshInstance3D
 @onready var neck := $NeckSocket
@@ -35,16 +37,16 @@ func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("Right", "Left", "Backward", "Forward")
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-		# Calculates the angle matching the movement direction vector on the XZ plane
+	if direction.length() > 0:
 		var target_angle = atan2(direction.x, direction.z)
-		# Interpolates smoothly between the current visual angle and the target angle
 		mesh.rotation.y = lerp_angle(mesh.rotation.y, target_angle, ROTATION_SPEED * delta)
+		var forward_vector = mesh.global_transform.basis.z
+		
+		velocity.x = move_toward(velocity.x, forward_vector.x * SPEED, ACCELERATION * delta)
+		velocity.z = move_toward(velocity.z, forward_vector.z * SPEED, ACCELERATION * delta)
 
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
+		velocity.z = move_toward(velocity.z, 0, FRICTION * delta)
 
 	move_and_slide()

@@ -3,10 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bpcbvooeaefhv" path="res://Scenes/Player.tscn" id="1_5cjrv"]
 [ext_resource type="PackedScene" uid="uid://cswv34ux75rmv" path="res://Scenes/radio.tscn" id="2_bcbcq"]
 [ext_resource type="Script" uid="uid://c5lqqfeoq8he6" path="res://Scripts/GameTimeTracker.gd" id="3_5nsto"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ylco5"]
-diffuse_mode = 3
-albedo_color = Color(6.497651e-07, 0.43312058, 0.2841594, 0.5058824)
+[ext_resource type="PackedScene" uid="uid://w1lujnfol62s" path="res://Scenes/Island.tscn" id="4_gjpho"]
 
 [sub_resource type="Animation" id="Animation_fvag4"]
 length = 1440.0
@@ -78,16 +75,8 @@ ambient_light_color = Color(0.4117647, 0.62352943, 0.6039216, 1)
 
 [node name="World" type="Node3D" unique_id=1520600693]
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1532956044]
-use_collision = true
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1483592378]
-transform = Transform3D(2.780452, 0, 0, 0, 1, 0, 0, 0, 2.2461562, 0, 0, 0.3811227)
-size = Vector3(50, 1, 50)
-material = SubResource("StandardMaterial3D_ylco5")
-
 [node name="Player" parent="." unique_id=648271848 instance=ExtResource("1_5cjrv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.993812, 4.847537, 11.262539)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.993812, 4.847537, 3.6256704)
 
 [node name="Radio" parent="." unique_id=704225729 instance=ExtResource("2_bcbcq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.002497, 0.5, 5.931259)
@@ -105,3 +94,5 @@ autoplay = &"SunRotation"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=301865481]
 environment = SubResource("Environment_5nsto")
+
+[node name="Island" parent="." unique_id=1526896630 instance=ExtResource("4_gjpho")]
