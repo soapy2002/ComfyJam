@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bpcbvooeaefhv"]
+
+[ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Scripts/Player_Movement.gd" id="1_rpqav"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kyqiw"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gntrk"]
+radius = 0.3
+height = 0.2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_anlgx"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5ixxa"]
+
+[node name="Player" type="Node3D" unique_id=648271848]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1737456433]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4347274, 3.2253637)
+script = ExtResource("1_rpqav")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1135158183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24065161, -1.9200395)
+mesh = SubResource("CapsuleMesh_kyqiw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/MeshInstance3D" unique_id=1468860803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2866404, 0.51158965)
+mesh = SubResource("SphereMesh_gntrk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1808035355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24096346, -1.9200395)
+shape = SubResource("CapsuleShape3D_anlgx")
+
+[node name="NeckSocket" type="Node3D" parent="CharacterBody3D" unique_id=1994229824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.9200395)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D/NeckSocket" unique_id=754809784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7254076, 0)
+shape = SubResource("SphereShape3D_5ixxa")
+spring_length = -5.0
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/NeckSocket/SpringArm3D" unique_id=2005637013]
+transform = Transform3D(-1, -5.329071e-15, 8.742279e-08, 2.944955e-08, 0.9415535, 0.3368636, -8.231323e-08, 0.3368636, -0.9415535, 0, 2.911, -3.163)

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cswv34ux75rmv"]
+
+[ext_resource type="PackedScene" uid="uid://ckhwa2ybvg71g" path="res://Meshes/SM_Radio.fbx" id="1_bdbpc"]
+[ext_resource type="Script" uid="uid://dnnnex3sy1g6h" path="res://Scripts/radio.gd" id="1_ibud7"]
+
+[node name="Node" type="Node3D" unique_id=704225729]
+script = ExtResource("1_ibud7")
+
+[node name="SM_Radio" parent="." unique_id=1598723947 instance=ExtResource("1_bdbpc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=453201659]
+
+[node name="Timer" type="Timer" parent="." unique_id=1062373142]
+one_shot = true

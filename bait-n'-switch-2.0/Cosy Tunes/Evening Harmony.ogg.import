@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Evening Harmony.ogg-63c6ed1302538ea7330e31e1a
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
