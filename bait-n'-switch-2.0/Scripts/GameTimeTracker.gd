@@ -33,6 +33,8 @@ func _process(delta: float) -> void:
 		current_time -= day_duration
 		current_day += 1
 		emit_signal("day_changed", current_day)
+		
+	check_day_transition()
 
 func check_day_transition() -> void:
 	var was_day = is_day
@@ -43,5 +45,6 @@ func check_day_transition() -> void:
 	
 	if was_day != is_day:
 		emit_signal("time_of_day_changed", is_day)
+		print("time of day changed!")
 
 	

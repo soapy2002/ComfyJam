@@ -2,11 +2,24 @@
 
 [ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Scripts/Player_Movement.gd" id="1_rpqav"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyqiw"]
+albedo_color = Color(1, 0, 0, 1)
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_kyqiw"]
+material = SubResource("StandardMaterial3D_kyqiw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45d1s"]
+albedo_color = Color(0.627451, 1, 0.67058825, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_gntrk"]
+material = SubResource("StandardMaterial3D_45d1s")
 radius = 0.3
-height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpqav"]
+albedo_color = Color(0.5529412, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_y7y61"]
+material = SubResource("StandardMaterial3D_rpqav")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_anlgx"]
 
@@ -23,8 +36,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24065161, -1.9200395)
 mesh = SubResource("CapsuleMesh_kyqiw")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/MeshInstance3D" unique_id=1468860803]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2866404, 0.51158965)
+transform = Transform3D(1, 0, 0, 0, 0.40666616, 0, 0, 0, 1, 0, 0.47138786, 0.34615815)
 mesh = SubResource("SphereMesh_gntrk")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CharacterBody3D/MeshInstance3D" unique_id=99018181]
+transform = Transform3D(0.5804367, 0, 0, 0, 0.9151325, 0, 0, 0, 0.4040084, 0, 0.09521937, -0.49996614)
+mesh = SubResource("BoxMesh_y7y61")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1808035355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24096346, -1.9200395)
