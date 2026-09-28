@@ -12,6 +12,8 @@ const ROTATION_SPEED = 6.0 # Lower the rotation to make turning wider
 @onready var camera := $NeckSocket/SpringArm3D/Camera3D
 @onready var spring_arm := $NeckSocket/SpringArm3D
 
+var current_interactable: Area3D = null
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -22,6 +24,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			neck.rotate_y(-event.relative.x * 0.001)
 			spring_arm.rotate_x(event.relative.y * 0.001)
 			spring_arm.rotation.x = clamp(spring_arm.rotation.x, deg_to_rad(-30), deg_to_rad(60))
+	elif event.is_action_pressed("Interact") and current_interactable != null:
+		if current_interactable.has_method("Interact"):
+			current_interactable.interact()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -50,3 +55,13 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, FRICTION * delta)
 
 	move_and_slide()
+
+# Triggered automatically when player walks up to an object
+func _on_interaction_detector_area_entered(area: Area3D) -> void:
+	if area.has_method("Interact"):
+		current_interactable = area
+
+# Triggered automatically when player walks away from the object
+func _on_interaction_detector_area_exited(area: Area3D) -> void:
+	if area == current_interactable:
+		current_interactable = null

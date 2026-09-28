@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsy03f0d00e4t"]
 
-[ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Scripts/Player_Movement.gd" id="1_0saui"]
+[ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Scripts/Player_Manager.gd" id="1_0saui"]
 [ext_resource type="PackedScene" uid="uid://cswv34ux75rmv" path="res://Scenes/radio.tscn" id="2_h4vre"]
 [ext_resource type="PackedScene" uid="uid://c1jvg32fe3a5" path="res://Meshes/Island/OLD/SM_BeachSceneOLD.fbx" id="3_8nl4x"]
 [ext_resource type="Script" uid="uid://cjiugv7mhpi82" path="res://Scripts/trash_pirate_spawner.gd" id="4_53tid"]

@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://br6lqcyjs5by1"]
 
+[ext_resource type="PackedScene" uid="uid://iibiecevd1y4" path="res://Scenes/Interactable.tscn" id="1_d00gy"]
 [ext_resource type="Script" uid="uid://bpwxgosca12d0" path="res://Scripts/NPC_Manager.gd" id="1_w4c5d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ylco5"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ylco5"]
 
@@ -12,6 +15,14 @@ material = SubResource("StandardMaterial3D_up2rf")
 left_to_right = 0.4
 
 [node name="NPC" type="Node3D" unique_id=247150555]
+
+[node name="Area3D" parent="." unique_id=1146322736 instance=ExtResource("1_d00gy")]
+disable_mode = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1799086936]
+transform = Transform3D(2, 0, 0, 0, -8.742278e-08, -2, 0, 2, -8.742278e-08, 1.1456704, 0.9097786, 0)
+shape = SubResource("BoxShape3D_ylco5")
+debug_color = Color(0, 11.708403, 13.469126, 0.41960785)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1199204701]
 script = ExtResource("1_w4c5d")
