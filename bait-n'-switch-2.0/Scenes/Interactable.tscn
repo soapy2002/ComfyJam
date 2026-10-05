@@ -1,6 +1,15 @@
 [gd_scene format=3 uid="uid://iibiecevd1y4"]
 
-[ext_resource type="Script" uid="uid://bv407rj40r7q8" path="res://Scenes/interactable.gd" id="1_pi15k"]
+[ext_resource type="Script" uid="uid://bv407rj40r7q8" path="res://Scripts/Interactable.gd" id="1_pi15k"]
 
-[node name="Area3D" type="Area3D" unique_id=1146322736]
+[sub_resource type="BoxShape3D" id="BoxShape3D_ylco5"]
+
+[node name="Interactable" type="Area3D" unique_id=1146322736]
+collision_layer = 4
+collision_mask = 4
 script = ExtResource("1_pi15k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1935795819]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.86598134, 0, 0)
+shape = SubResource("BoxShape3D_ylco5")
+debug_color = Color(0.7176471, 0.48235294, 0, 1)

@@ -98,11 +98,12 @@ environment = SubResource("Environment_5nsto")
 
 [node name="Island" parent="." unique_id=1526896630 instance=ExtResource("4_gjpho")]
 
-[node name="NPC" parent="." unique_id=247150555 instance=ExtResource("6_y7y61")]
-transform = Transform3D(-0.854193, 0, -0.5199561, 0, 1, 0, 0.5199561, 0, -0.854193, -37.02204, 2.3228974, -17.513948)
-
 [node name="NPC2" parent="." unique_id=1931909409 instance=ExtResource("5_45d1s")]
-transform = Transform3D(-0.2241957, 0, 0.97454417, 0, 1, 0, -0.97454417, 0, -0.2241957, -32.2422, 1.9964118, -54.61399)
+transform = Transform3D(-0.71286684, 0, -0.7012995, 0, 1, 0, 0.7012995, 0, -0.71286684, -30.064623, 1.9964118, -57.284863)
 
 [node name="NPC3" parent="." unique_id=390595005 instance=ExtResource("5_p70al")]
 transform = Transform3D(-0.07818084, 0, -0.9969392, 0, 1, 0, 0.9969392, 0, -0.07818084, -42.435204, 2.4061477, -57.08427)
+
+[node name="Longo" parent="." unique_id=1199204701 instance=ExtResource("6_y7y61")]
+transform = Transform3D(-0.60758483, 0, -0.7942548, 0, 1, 0, 0.7942548, 0, -0.60758483, -36.893982, 2.4770336, -19.69447)
+collision_layer = 5

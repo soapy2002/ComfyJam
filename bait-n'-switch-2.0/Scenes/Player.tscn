@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://bpcbvooeaefhv"]
 
 [ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Scripts/Player_Manager.gd" id="1_rpqav"]
+[ext_resource type="Script" uid="uid://bgkblpmq3ijmu" path="res://Scripts/Player_Interactor.gd" id="2_kyqiw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ylco5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_anlgx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyqiw"]
 albedo_color = Color(1, 0, 0, 1)
@@ -21,39 +26,48 @@ albedo_color = Color(0.5529412, 0, 0, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_y7y61"]
 material = SubResource("StandardMaterial3D_rpqav")
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_anlgx"]
-
 [sub_resource type="SphereShape3D" id="SphereShape3D_5ixxa"]
 
-[node name="Player" type="Node3D" unique_id=648271848]
-
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1737456433]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4347274, 3.2253637)
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1737456433]
 script = ExtResource("1_rpqav")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1135158183]
+[node name="Interactor" type="Area3D" parent="." unique_id=527379083 node_paths=PackedStringArray("player_node")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.27797103, -1.8752573)
+collision_layer = 4
+collision_mask = 4
+monitorable = false
+script = ExtResource("2_kyqiw")
+player_node = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactor" unique_id=1699117135]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0.11793852, 0)
+shape = SubResource("BoxShape3D_ylco5")
+debug_color = Color(0.9815832, 0, 0.37388653, 0.41960785)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1808035355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24096346, -1.9200395)
+shape = SubResource("CapsuleShape3D_anlgx")
+debug_color = Color(0, 0.6, 0.69803923, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1135158183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24065161, -1.9200395)
 mesh = SubResource("CapsuleMesh_kyqiw")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/MeshInstance3D" unique_id=1468860803]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1468860803]
 transform = Transform3D(1, 0, 0, 0, 0.40666616, 0, 0, 0, 1, 0, 0.47138786, 0.34615815)
 mesh = SubResource("SphereMesh_gntrk")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="CharacterBody3D/MeshInstance3D" unique_id=99018181]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" unique_id=99018181]
 transform = Transform3D(0.5804367, 0, 0, 0, 0.9151325, 0, 0, 0, 0.4040084, 0, 0.09521937, -0.49996614)
 mesh = SubResource("BoxMesh_y7y61")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1808035355]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24096346, -1.9200395)
-shape = SubResource("CapsuleShape3D_anlgx")
-
-[node name="NeckSocket" type="Node3D" parent="CharacterBody3D" unique_id=1994229824]
+[node name="NeckSocket" type="Node3D" parent="." unique_id=1994229824]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.9200395)
 
-[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D/NeckSocket" unique_id=754809784]
+[node name="SpringArm3D" type="SpringArm3D" parent="NeckSocket" unique_id=754809784]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7254076, 0)
 shape = SubResource("SphereShape3D_5ixxa")
 spring_length = -5.0
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/NeckSocket/SpringArm3D" unique_id=2005637013]
+[node name="Camera3D" type="Camera3D" parent="NeckSocket/SpringArm3D" unique_id=2005637013]
 transform = Transform3D(-1, -5.329071e-15, 8.742279e-08, 2.944955e-08, 0.9415535, 0.3368636, -8.231323e-08, 0.3368636, -0.9415535, 0, 2.911, -3.163)

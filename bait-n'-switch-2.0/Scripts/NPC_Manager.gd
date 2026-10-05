@@ -9,24 +9,25 @@ enum Schedule { ALWAYS, DAY_ONLY, NIGHT_ONLY }
 
 @export_group("Movement")
 @export var speed: float = 3.0
-#@export var wander_radius: float = 5.0  # If we want an npc that sort of just walk around an area lol
+#@export var wander_radius: float = 5.0  # If we want an npc that sort of just walks around an area lol
 
 @onready var original_y: float = global_position.y
+@onready var interactable: Interactable = $Interactable
 
 func _ready() -> void:
 	GameTimeTracker.time_of_day_changed.connect(_on_time_of_day_changed)
 	# Makes sure the NPC starts with the correct visibility state
 	_on_time_of_day_changed(GameTimeTracker.is_day)
-	pass
+	interactable.interacted.connect(_on_interact)
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta: float) -> void:
+	pass
 	# Add pathfinding logic here at some point
-	move_and_slide()
+	#move_and_slide() This doesnt work because script is not attached to character
 
-func interact() -> void:
-	print(npc_name, ": 'Hello, traveler!'")
-	# Add Dialogue logic here at some point
+func _on_interact(_player):
+	print("Hey what's up man, it's a me Longo!")
 
 func _on_time_of_day_changed(is_daytime: bool) -> void:
 	var should_be_active: bool = true
