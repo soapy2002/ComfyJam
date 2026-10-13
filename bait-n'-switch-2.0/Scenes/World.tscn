@@ -110,4 +110,4 @@ transform = Transform3D(-0.60758483, 0, -0.7942548, 0, 1, 0, 0.7942548, 0, -0.60
 collision_layer = 5
 
 [node name="FishingSpot" parent="." unique_id=1907756161 instance=ExtResource("7_y7y61")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8693957, 0.5225568, 6.4184046)
+transform = Transform3D(-0.78876513, 0, 0.61469483, 0, 1, 0, -0.61469483, 0, -0.78876513, 11.200132, 12.242048, -13.105998)
