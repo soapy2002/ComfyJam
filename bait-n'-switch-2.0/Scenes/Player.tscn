@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://nqs4myqtbfyo" path="res://Scripts/Player_Manager.gd" id="1_rpqav"]
 [ext_resource type="Script" uid="uid://bgkblpmq3ijmu" path="res://Scripts/Player_Interactor.gd" id="2_kyqiw"]
+[ext_resource type="Script" uid="uid://c1t6ynmcxa46r" path="res://Scripts/fishing_controller.gd" id="3_gntrk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ylco5"]
 
@@ -27,6 +28,12 @@ albedo_color = Color(0.5529412, 0, 0, 1)
 material = SubResource("StandardMaterial3D_rpqav")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_5ixxa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hjfx7"]
+albedo_color = Color(1, 0, 0.19607843, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ylco5"]
+material = SubResource("StandardMaterial3D_hjfx7")
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1737456433]
 script = ExtResource("1_rpqav")
@@ -71,3 +78,12 @@ spring_length = -5.0
 
 [node name="Camera3D" type="Camera3D" parent="NeckSocket/SpringArm3D" unique_id=2005637013]
 transform = Transform3D(-1, -5.329071e-15, 8.742279e-08, 2.944955e-08, 0.9415535, 0.3368636, -8.231323e-08, 0.3368636, -0.9415535, 0, 2.911, -3.163)
+
+[node name="FishingController" type="Node3D" parent="." unique_id=2050664166]
+script = ExtResource("3_gntrk")
+
+[node name="FishSpawner" type="Node3D" parent="FishingController" unique_id=605485676]
+
+[node name="AimMarker" type="MeshInstance3D" parent="FishingController" unique_id=718374113]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+mesh = SubResource("SphereMesh_ylco5")

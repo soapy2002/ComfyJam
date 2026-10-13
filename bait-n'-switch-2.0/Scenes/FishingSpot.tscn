@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bght0lrlyiytp"]
+
+[ext_resource type="Script" uid="uid://bujyglp53de57" path="res://Scripts/fishing_spot.gd" id="1_xl3vh"]
+[ext_resource type="PackedScene" uid="uid://iibiecevd1y4" path="res://Scenes/Interactable.tscn" id="2_euuml"]
+
+[node name="FishingSpot" type="Node3D" unique_id=1907756161]
+script = ExtResource("1_xl3vh")
+
+[node name="Interactable" parent="." unique_id=1146322736 instance=ExtResource("2_euuml")]
+collision_mask = 0
