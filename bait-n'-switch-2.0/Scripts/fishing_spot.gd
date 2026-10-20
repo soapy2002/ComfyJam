@@ -1,5 +1,6 @@
 extends Node3D
 
+#comment
 @onready var interactable = $Interactable
 
 func _ready():
