@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dlwr424h14748"]
+
+[ext_resource type="Script" uid="uid://codca6wrvysep" path="res://Scripts/game_manager.gd" id="1_oj352"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_e5fcp"]
+specular_color = Color(0.1811947, 0.1811947, 0.1811947, 1)
+
+[node name="GameManager" type="Node" unique_id=1071325103]
+script = ExtResource("1_oj352")
+
+[node name="Quest Log" type="CanvasLayer" parent="." unique_id=278918301]
+
+[node name="Background" type="Sprite2D" parent="Quest Log" unique_id=915012146]
+modulate = Color(3.194022, 3.194022, 3.1940215, 0.149)
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(147.18001, 202.885)
+scale = Vector2(261.64, 192.1)
+texture = SubResource("CanvasTexture_e5fcp")
+
+[node name="Quest Title" type="RichTextLabel" parent="Quest Log" unique_id=165126987]
+offset_left = 18.0
+offset_top = 107.0
+offset_right = 277.0
+offset_bottom = 136.0
+theme_override_colors/default_color = Color(0.563374, 0.563374, 0.563374, 1)
+text = "Quest Title"
+scroll_active = false
+
+[node name="Quest Description" type="RichTextLabel" parent="Quest Log" unique_id=516040283]
+offset_left = 18.0
+offset_top = 145.0
+offset_right = 278.0
+offset_bottom = 175.0
+text = "Quest Description"
+scroll_active = false
+
+[node name="GameTrackers" type="CanvasLayer" parent="." unique_id=1812121557]
+
+[node name="Money" type="Label" parent="GameTrackers" unique_id=1594308282]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -320.0
+offset_right = 21.0
+offset_bottom = -297.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "$0.67"
+
+[node name="Time" type="Label" parent="GameTrackers" unique_id=2073428942]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -348.0
+offset_right = 21.0
+offset_bottom = -325.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 28
+text = "06:00"
+horizontal_alignment = 1
+vertical_alignment = 1

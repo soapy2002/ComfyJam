@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dej73hndjrt1x" path="res://Scenes/NPCS/TrashPirate.tscn" id="5_p70al"]
 [ext_resource type="PackedScene" uid="uid://br6lqcyjs5by1" path="res://Scenes/NPCS/Longo.tscn" id="6_y7y61"]
 [ext_resource type="PackedScene" uid="uid://bght0lrlyiytp" path="res://Scenes/FishingSpot.tscn" id="7_y7y61"]
+[ext_resource type="PackedScene" uid="uid://dlwr424h14748" path="res://Scenes/game_manager.tscn" id="8_q2d71"]
 
 [sub_resource type="Animation" id="Animation_fvag4"]
 length = 1440.0
@@ -106,8 +107,10 @@ transform = Transform3D(-0.71286684, 0, -0.7012995, 0, 1, 0, 0.7012995, 0, -0.71
 transform = Transform3D(-0.07818084, 0, -0.9969392, 0, 1, 0, 0.9969392, 0, -0.07818084, -42.435204, 2.4061477, -57.08427)
 
 [node name="Longo" parent="." unique_id=1199204701 instance=ExtResource("6_y7y61")]
-transform = Transform3D(-0.60758483, 0, -0.7942548, 0, 1, 0, 0.7942548, 0, -0.60758483, -36.893982, 2.4770336, -19.69447)
+transform = Transform3D(-0.60758483, 0, -0.7942548, 0, 1, 0, 0.7942548, 0, -0.60758483, -37.705067, 2.4770336, -21.902525)
 collision_layer = 5
 
 [node name="FishingSpot" parent="." unique_id=1907756161 instance=ExtResource("7_y7y61")]
 transform = Transform3D(-0.78876513, 0, 0.61469483, 0, 1, 0, -0.61469483, 0, -0.78876513, 11.200132, 12.242048, -13.105998)
+
+[node name="GameManager" parent="." unique_id=1071325103 instance=ExtResource("8_q2d71")]

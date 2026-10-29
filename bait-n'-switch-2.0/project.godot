@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 [autoload]
 
 GameTimeTracker="*uid://c5lqqfeoq8he6"
+GameManager="*uid://dlwr424h14748"
 
 [display]
 
